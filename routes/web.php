@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AuthControllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,5 +23,10 @@ Route::get('/about', function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
+
+Route::get('/login',[AuthController::class,'create'])->name('login');
+Route::post('/login',[AuthController::class,'store']);
+
+Route::post('/logout',[AuthController::class,'logout']);
 
 // Create additional Routes below
