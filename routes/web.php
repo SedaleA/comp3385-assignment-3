@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthControllers;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CommunityEventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,11 +23,15 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/dashboard', [DashboardController::class, 'index']) -> middleware('auth');
+// Create additional Routes below
 
 Route::get('/login',[AuthController::class,'create'])->name('login');
 Route::post('/login',[AuthController::class,'store']);
 
-Route::post('/logout',[AuthController::class,'logout']);
+Route::post('/logout',[AuthController::class,'logout']) -> middleware('auth');
 
-// Create additional Routes below
+Route::get('/community-events/add',[CommunityEventController::class,'create'])->middleware('auth');
+
+Route::post('/community-events',[CommunityEventController::class,'store'])->middleware('auth');
+

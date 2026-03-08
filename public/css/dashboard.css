@@ -1,0 +1,14 @@
+.dashboard-page {
+    background-color: #eef7f4;
+    min-height: 100vh;
+}
+
+.event-image {
+    height: 220px;
+    object-fit: cover;
+}
+
+.placeholder-image {
+    height: 220px;
+    background: #dde7e3;
+}

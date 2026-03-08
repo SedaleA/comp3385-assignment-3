@@ -20,7 +20,10 @@
                     <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/about') }}">About</a>
+                    <a class="nav-link" href="{{ url('/about') }}">About</a>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/dashboard') }}">Dashboard</a>
                 </li>
             </ul>
         </div>

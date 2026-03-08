@@ -1,0 +1,60 @@
+body {
+    background-color: #eaf4f1;
+    min-height: 100vh;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+}
+
+.brand-icon {
+    width: 58px;
+    height: 58px;
+    background: #1f9d8b;
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin: 0 auto 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.login-card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+.btn-signin {
+    background-color: #1f9d8b;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.btn-signin:hover {
+    background-color: #188574;
+}
+
+.forgot-link,
+.contact-link {
+    color: #1f9d8b;
+    text-decoration: none;
+}
+
+.forgot-link:hover,
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.page-subtext {
+    color: #6c757d;
+}
